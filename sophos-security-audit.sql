@@ -1,0 +1,13 @@
+DELETE FROM plugin WHERE id = "553698";
+DELETE FROM plugin_sid where plugin_id = "553698";
+INSERT INTO plugin (id, type, name, description, product_type, vendor) VALUES (553698, 1, 'sophos-security-audit', 'Enterprise Console', 3, 'Sophos');
+-- INSERT IGNORE INTO software_cpe (cpe, name, version, line, vendor, plugin) VALUES ('cpe:/o:', 'Enterprise Console','5.x','','Sophos', 'sophos-security-audit:553698');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (553698, 1, 11, 187, 2, 2, 'Sophos Security Audit: Configuration Change - USERDATA7');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (553698, 2, 5, 260, 2, 2, 'Sophos Security Audit: Policy Assignment - USERDATA7');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (553698, 3, 12, 97, 2, 2, 'Sophos Security Audit: Protection - USERDATA7');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (553698, 5, 12, 101, 2, 2, 'Sophos Security Audit: Update - USERDATA7');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (553698, 6, 5, 259, 2, 2, 'Sophos Security Audit: Delete - USERDATA7');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (553698, 7, 12, 97, 2, 2, 'Sophos Security Audit: Acknowledge - USERDATA7');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (553698, 8, 12, 106, 2, 2, 'Sophos Security Audit: Scan - USERDATA7');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (553698, 9, 12, 98, 2, 2, 'Sophos Security Audit: Clean Up - USERDATA7');
+INSERT INTO `plugin_sid` (`plugin_id`,`sid`,`category_id`,`subcategory_id`,`reliability`,`priority`,`name`) VALUES (553698, 9999, 12, 17, 1, 1, 'Sophos Security Audit: Generic Event');

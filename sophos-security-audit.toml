@@ -1,0 +1,106 @@
+[[regexes]]
+  name = "Edit Actions"
+  rule_block_name = "Configuration Change: USERDATA7"
+  description = ""
+  re = '''.*Action=Edit\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=(\")?(?P<udtwo>[^\"].*[^\"])(\")?\sParameterTypeId=\d+\sParameterValue=(\")?(?P<udthree>[^\"].*[^\"])(\")?\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?(?P<udfour>[^\"].*[^\"])(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  hide = false
+  [regexes.force_field_values]
+    plugin_sid="1"
+
+[[regexes]]
+  name = "Assign Actions"
+  rule_block_name = "Policy Assignment: USERDATA7"
+  description = ""
+  re = '''.*Action=Assign\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=(\")?(?P<udtwo>[^\"].*[^\"])(\")?\sParameterTypeId=\d+\sParameterValue=(\")?(?P<udthree>[^\"].*[^\"])(\")?\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?(?P<udfour>[^\"].*[^\"])(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  hide = false
+  [regexes.force_field_values]
+    plugin_sid="2"
+
+[[regexes]]
+  name = "Protect Actions"
+  rule_block_name = "Protection: USERDATA7"
+  description = ""
+  re = '''.*Action=Protect\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=.*\sParameterTypeId=\d+\sParameterValue=.*\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?Name=(?P<srcip>\S+[^;]);Domain=(?P<udtwo>\S+[^;]);IPv4=((?P<dstip>\IPV4))?;DNSName=((?P<udfour>\S+[^;]))?;Description=.*;(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  hide = false
+  [regexes.force_field_values]
+    plugin_sid="3"
+
+[[regexes]]
+  name = "Update Actions"
+  rule_block_name = "Update: USERDATA7"
+  description = ""
+  re = '''.*Action=Update\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=.*\sParameterTypeId=\d+\sParameterValue=.*\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?Name=(?P<srcip>\S+[^;]);Domain=(?P<udtwo>\S+[^;]);IPv4=((?P<dstip>\IPV4))?;DNSName=((?P<udfour>\S+[^;]))?;Description=.*;(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  hide = false
+  [regexes.force_field_values]
+    plugin_sid="5"
+
+[[regexes]]
+  name = "Delete Actions"
+  rule_block_name = "Delete: USERDATA7"
+  description = ""
+  re = '''.*Action=Delete\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=.*\sParameterTypeId=\d+\sParameterValue=.*\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?Name=(?P<srcip>\S+[^;]);Domain=(?P<udtwo>\S+[^;]);IPv4=((?P<dstip>\IPV4))?;DNSName=((?P<udfour>\S+[^;]))?;Description=.*;(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  hide = false
+  [regexes.force_field_values]
+    plugin_sid="6"
+
+[[regexes]]
+  name = "Acknowledge Actions"
+  rule_block_name = "Acknowledge: USERDATA7"
+  description = ""
+  re = '''.*Action=Acknowledge\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=.*\sParameterTypeId=\d+\sParameterValue=.*\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?Name=(?P<srcip>\S+[^;]);Domain=(?P<udtwo>\S+[^;]);IPv4=((?P<dstip>\IPV4))?;DNSName=((?P<udfour>\S+[^;]))?;Description=.*;(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  hide = false
+  [regexes.force_field_values]
+    plugin_sid="7"
+
+[[regexes]]
+  name = "Scan Actions"
+  rule_block_name = "Scan: USERDATA7"
+  description = ""
+  re = '''.*Action=Scan\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=.*\sParameterTypeId=\d+\sParameterValue=.*\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?Name=(?P<srcip>\S+[^;]);Domain=(?P<udtwo>\S+[^;]);IPv4=((?P<dstip>\IPV4))?;DNSName=((?P<udfour>\S+[^;]))?;Description=.*;(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  hide = false
+  [regexes.force_field_values]
+    plugin_sid="8"
+
+[[regexes]]
+  name = "Clean Up Actions"
+  rule_block_name = "Clean Up: USERDATA7"
+  description = ""
+  re = '''.*Action=\"Clean up\"\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=.*\sParameterTypeId=\d+\sParameterValue=.*\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?Name=(?P<srcip>\S+[^;]);Domain=(?P<udtwo>\S+[^;]);IPv4=((?P<dstip>\IPV4))?;DNSName=((?P<udfour>\S+[^;]))?;Description=.*;(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  hide = false
+  [regexes.force_field_values]
+    plugin_sid="9"
+
+[[regexes]]
+  name = "zzzz Generic"
+  rule_block_name = "zzzz Generic"
+  description = ""
+  re = '''(?P<udone>.*)'''
+  hide = false
+  [regexes.force_field_values]
+    plugin_sid="9999"
+
+[options]
+  show_matches = true
+  show_misses = false
+  show_all_matches = false
+  match_sample_size = 0
+  show_multiple_matches = false
+
+[plugin]
+  id = 553698
+  name = "sophos-security-audit"
+  version = "v0.0.1"
+  description = ""
+  log_file = "/var/log/sophos-security-audit.log"
+  website = "https://gitlab.sedara.io/av-plugins/sophos-security-audit"
+  log_format = "https://www.sophos.com/en-us/medialibrary/PDFs/documentation/sec_52_auditeng.pdf"
+
+[vendor]
+  name = "Sophos"
+  model = "Enterprise Console"
+  version = "5.x"
+  per_asset = false
+
+[author]
+  name = "Sedara, LLC."
+  email = "devs@sedarasecurity.com"
