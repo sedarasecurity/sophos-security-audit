@@ -1,20 +1,3 @@
-## SophosSecurity Columns
-Name=EventId Type=int
-Name=Timestamp Type=datetime
-Name=Action Type=nvarchar
-Name=TargetType Type=nvarchar
-Name=TargetSubType Type=nvarchar
-Name=TargetName Type=nvarchar
-Name=ParameterType Type=nvarchar
-Name=ParameterValue Type=nvarchar
-Name=Result Type=nvarchar
-Name=UserName Type=nvarchar
-Name=HostName Type=nvarchar
-Name=HostIPAddress Type=nvarchar
-Name=ActionId Type=int
-Name=TargetTypeId Type=int
-Name=TargetSubTypeId Type=int
-Name=ParameterTypeId Type=int
-Name=SubEstateId Type=int
-Name=ResultId Type=int
-Name=UserSid Type=nvarchar
+sophos-security-audit
+=====================
+This plugin requires [dbpoller](https://gitlab.sedara.io/av-plugin-daemons/dbpoller).
