@@ -89,7 +89,7 @@
 [plugin]
   id = 553698
   name = "sophos-security-audit"
-  version = "v0.0.1"
+  version = "v0.0.3"
   description = ""
   log_file = "/var/log/sophos-security-audit.log"
   website = "https://gitlab.sedara.io/av-plugins/sophos-security-audit"
