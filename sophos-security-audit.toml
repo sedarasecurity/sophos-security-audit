@@ -2,7 +2,7 @@
   name = "Edit Actions"
   rule_block_name = "Configuration Change: USERDATA7"
   description = ""
-  re = '''.*Action=Edit\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=(\")?(?P<udtwo>[^\"].*[^\"])(\")?\sParameterTypeId=\d+\sParameterValue=(\")?(?P<udthree>[^\"].*[^\"])(\")?\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?(?P<udfour>[^\"].*[^\"])(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  re = '''.*Action=Edit\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=(?P<srcip>\S+)\sParameterType=(\")?(?P<udtwo>[^\"].*[^\"])(\")?\sParameterTypeId=\d+\sParameterValue=(\")?(?P<udthree>[^\"].*[^\"])(\")?\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?(?P<udfour>[^\"].*[^\"])(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
   hide = false
   [regexes.force_field_values]
     plugin_sid="1"
@@ -11,7 +11,7 @@
   name = "Assign Actions"
   rule_block_name = "Policy Assignment: USERDATA7"
   description = ""
-  re = '''.*Action=Assign\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=\S+\sParameterType=(\")?(?P<udtwo>[^\"].*[^\"])(\")?\sParameterTypeId=\d+\sParameterValue=(\")?(?P<udthree>[^\"].*[^\"])(\")?\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?(?P<udfour>[^\"].*[^\"])(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
+  re = '''.*Action=Assign\sActionId=(?P<udone>\d+)\sEventId=\d+\sHostIPAddress=\".+\"\sHostName=(?P<srcip>\S+)\sParameterType=(\")?(?P<udtwo>[^\"].*[^\"])(\")?\sParameterTypeId=\d+\sParameterValue=(\")?(?P<udthree>[^\"].*[^\"])(\")?\sResult=(\")?(?P<udseven>[^\"]\S+[^\"])(\")?\sResultId=\d+\sSubEstateId=\d+\sTargetName=(\")?(?P<udfour>[^\"].*[^\"])(\")?\sTargetSubType=(\")?(?P<udfive>[^\"].*[^\"])(\")?\sTargetSubTypeId=\d+\sTargetType=(?P<udsix>\S+)\sTargetTypeId=\d\sTimestamp=(?P<date>\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2})\.\d+\s\+\d+\sUTC\sUserName=(\")?(?P<username>[^\"]\S+[^\"])(\")?\s'''
   hide = false
   [regexes.force_field_values]
     plugin_sid="2"
