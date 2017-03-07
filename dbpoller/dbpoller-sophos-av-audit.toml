@@ -1,0 +1,27 @@
+version = "1"
+
+[general]
+  auto_update = true
+  embedding = false
+  interval = "1m"
+  polling = true
+  serving = false
+  tailing = false
+  track_state = true
+
+[polling]
+  engine = "mssql"
+  dbname = "SophosSecurity"
+  output_file = "/var/local/sophos-security-audit.log"
+  password = "changeme"
+  port = "changeme"
+  server = "changeme"
+  tls = "disable"
+  username = "changeme\\changeme"
+
+  [[polling.queries]]
+    name = "get_events"
+    order = 1
+    primary_index = "EventId"
+    query = "SELECT * FROM Reports.vAuditEventsAll WHERE EventId > ? ORDER BY EventId"
+    starting_index_value = "-1"
