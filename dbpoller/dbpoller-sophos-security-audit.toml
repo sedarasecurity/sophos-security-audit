@@ -12,7 +12,7 @@ version = "1"
 [polling]
   engine = "mssql"
   dbname = "SophosSecurity"
-  output_file = "/var/local/sophos-security-audit.log"
+  output_file = "/var/log/sophos-security-audit.log"
   password = "changeme"
   port = "changeme"
   server = "changeme"
@@ -25,3 +25,7 @@ version = "1"
     primary_index = "EventId"
     query = "SELECT * FROM Reports.vAuditEventsAll WHERE EventId > ? ORDER BY EventId"
     starting_index_value = "-1"
+
+[state]
+  state_backend = "boltdb"
+  state_db = "/opt/sedara/state/dbpoller-sophos-security-audit.db"
