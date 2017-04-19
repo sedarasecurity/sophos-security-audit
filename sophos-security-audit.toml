@@ -94,6 +94,7 @@
   log_file = "/var/log/sophos-security-audit.log"
   website = "https://gitlab.sedara.io/av-plugins/sophos-security-audit"
   log_format = "https://www.sophos.com/en-us/medialibrary/PDFs/documentation/sec_52_auditeng.pdf"
+  database = true
 
 [vendor]
   name = "Sophos"
